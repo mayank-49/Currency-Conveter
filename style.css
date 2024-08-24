@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: rgb(63,94,251); */
+    /* background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); */
+    background: url("./img/bg.avif") center no-repeat;
+    animation: opp 1s ease-in;
+}
+
+.converter-container {
+    /* background-color: #fff; */
+    background-color: #fff;
+    color: black;
+    border-radius: 8px;
+    /* box-shadow: 20px 20px 50px gold; */
+    padding: 24px 30px;
+    text-align: center;
+    animation: pop 1s ease forwards;
+}
+@keyframes opp{
+    0%{
+        opacity: 0.1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes pop{
+    0%{
+        transform: scale(2);
+    }
+}
+.converter-container>h1 {
+    font-size: 28px;
+    text-decoration: underline;
+    margin-bottom: 40px;
+}
+
+.converter-container .input-container {
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-block: 20px;
+}
+
+.converter-container .input-container:focus-within {
+    border-color: #0056b3;
+}
+
+.converter-container .input-container input,
+select {
+    /* background-color: transparent; */
+    width: 150px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    padding: 8px;
+    overflow: hidden;
+}
+
+.converter-container .arrow {
+    transform: rotate(90deg);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.converter-container .result {
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:420px) {
+    .converter-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .converter-container h1 {
+        font-size: 22px;
+    }
+
+    .converter-container .input-container {
+        border: none;
+    }
+
+    .converter-container .input-container input,
+    select {
+        border: 1px solid #ccc;
+        margin-block: 4px;
+        width: 100%;
+    }
+}
