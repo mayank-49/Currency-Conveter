@@ -10,18 +10,14 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* background: rgb(63,94,251); */
-    /* background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); */
     background: url("./img/bg.avif") center no-repeat;
     animation: opp 1s ease-in;
 }
 
 .converter-container {
-    /* background-color: #fff; */
     background-color: #fff;
     color: black;
     border-radius: 8px;
-    /* box-shadow: 20px 20px 50px gold; */
     padding: 24px 30px;
     text-align: center;
     animation: pop 1s ease forwards;
@@ -57,7 +53,6 @@ body {
 
 .converter-container .input-container input,
 select {
-    /* background-color: transparent; */
     width: 150px;
     outline: none;
     border: none;
